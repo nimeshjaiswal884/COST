@@ -1,0 +1,15 @@
+data <- read.csv(file.choose(), header = T, sep = ",")
+#View(data)
+#attach(data)
+data$Low <- data$Low - 0.5
+data$High <- data$High + 0.5
+data$x <- (data$Low + data$High)/2
+View(data)
+mean_data <- mean(rep(data$x,data$Frequency))
+mean_data
+
+sd_data <- sd(rep(data$x,data$Frequency))
+sd_data
+
+var_data <-var(rep(data$x,data$Frequency))
+var_data

@@ -1,0 +1,28 @@
+velocities <- c(25, 50, 75)  # in mph
+
+# Calculate the arithmetic mean
+arithmetic_mean <- mean(velocities)
+
+# Calculate the harmonic mean
+harmonic_mean <- length(velocities) / sum(1 / velocities)
+
+# Print the results
+cat("Arithmetic Mean:", arithmetic_mean, "mph\n")
+cat("Harmonic Mean:", harmonic_mean, "mph\n")
+
+
+
+
+
+
+
+dist<-c(25,25,25)
+speed<-c(25,50,75)
+data<-rep(speed,dist)
+data
+mean_speed<-mean(data)
+mean_speed
+library(psych)
+harmonic_speed<-harmonic.mean(data)
+harmonic_speed
+print("since speed have fraction unit measure therefore harmonic mean is correct mean")
